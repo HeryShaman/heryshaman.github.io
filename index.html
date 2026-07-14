@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio Personnel</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <p class="logo">Héry Rafalimanana-Lysson</p>
+                    <ul>
+                        <li><a href="#header">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#portfolio">Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Gameplay Programmer</p>
+                    <h1>
+                        Bonjour, <br />je suis Héry Rafalimanana-Lysson<br /><span>Gameplay Programmer</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <!----------about---------->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col1">
+                        <!--<img src="" />-->
+                    </div>
+                    <div class="about-col2">
+                        <h1 class="sub-title">À propos</h1>
+                        <p>
+                            Étudiant en Game Development, spécialisé en gameplay et shader programming
+                            sur Unity et Godot. Attiré par le rôle de support que permet la
+                            programmation entre les différentes disciplines du jeu vidéo et reste
+                            ouvert à la découverte de l'ensemble des métiers du secteur, pour
+                            évoluer vers un profil pluridisciplinaire.
+                        </p>
+                        <div class="tab-titles">
+                            <p
+                                class="tab-links active-link"
+                                onclick="opentab('skills')"
+                            >
+                                Compétences
+                            </p>
+                            <p
+                                class="tab-links"
+                                onclick="opentab('experience')"
+                            >
+                                Experience
+                            </p>
+                            <p class="tab-links" onclick="opentab('education')">
+                                Education
+                            </p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li>
+                                    <span>Game Programming</span><br />
+                                    Gameplay/ AI<br />
+                                    Interface
+                                </li>
+                                <li>
+                                    <span>Shader Programming</span><br />
+                                    Engine Shader Editing<br />
+                                    Visual Shaders<br />
+                                    VFX
+
+                                </li>
+                                <li>
+                                    <span>Logiciel de modélisation</span><br />
+                                    Modeling<br />
+                                    Texturing<br />
+                                    Shader Editing<br />
+                                    Export
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li>
+                                    <span>Game4you2Know</span><br/>
+                                    Game Developper Bénévole
+                                </li>
+                                <li>
+                                    <span>Lauréats European Permacomputing Game Jam</span><br />
+                                    Game Developer
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li>
+                                    <span>ICAN</span><br />
+                                    Spécialisation Game Programming
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------portfolio---------->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Projets</h1>
+                <div class="projects-list">
+                    <a href="project-corridor-tadc.html" class="project">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/corridor-tadc.webm" type="video/webm" />
+                        </video>
+                        <div class="project-info">
+                            <h3>Corridor TADC</h3>
+                            <p class="project-date">mai 2026</p>
+                            <div class="project-tags">
+                                <span class="tag">UNITY</span>
+                                <span class="tag">C#</span>
+                                <span class="tag">BLENDER</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="project-cells-war.html" class="project">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/cells-war.webm" type="video/webm" />
+                        </video>
+                        <div class="project-info">
+                            <h3>Cells War</h3>
+                            <p class="project-date">octobre 2025 - janvien 2026</p>
+                            <div class="project-tags">
+                                <span class="tag">UNITY</span>
+                                <span class="tag">C#</span>
+                                <span class="tag">BLENDER</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="project-frog-jump.html" class="project">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/frog-jump.webm" type="video/webm" />
+                        </video>
+                        <div class="project-info">
+                            <h3>Frog Jump</h3>
+                            <p class="project-date">mai 2025</p>
+                            <div class="project-tags">
+                                <span class="tag">GODOT</span>
+                                <span class="tag">GDScript</span>
+                                <span class="tag">BLENDER</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+<!----------contact---------->
+<div id="contact">
+    <div class="container">
+        <h1 class="sub-title">Contact</h1>
+        <div class="contact-links">
+            <a href="https://www.linkedin.com/in/héry-rafalimanana-lysson-78228939a" target="_blank" class="contact-btn">LinkedIn</a>
+            <a href="https://github.com/HeryShaman" target="_blank" class="contact-btn">GitHub</a>
+            <a href="cv.pdf" download class="contact-btn">CV</a>
+        </div>
+    </div>
+</div>
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #080808;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 65vh;
+    /*background-image: url();*/
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo {
+    width: 200px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #87ceeb;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+.header-text {
+    margin-top: 20%;
+    font-size: 18px;
+}
+
+.header-text h1 {
+    font-size: 24x;
+    margin-bottom: 20px;
+}
+
+.header-text h1 span {
+    color: #87ceeb;
+}
+
+/*----------about----------*/
+
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #87ceeb;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links:hover::after {
+    width: 100%;
+}
+
+.tab-links.active-link::after {
+    width: 100%;
+}
+.tab-links.active-link {
+    color: #87ceeb;
+}
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #87ceeb;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/*----------portfolio----------*/
+
+#portfolio {
+    padding: 50px 0;
+}
+
+.portfolio-col {
+    flex-basis: 30%;
+    margin-bottom: 30px;
+}
+
+.portfolio-col img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+.project {
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: #0d0d0d;
+    border: 1px solid #1f1f1f;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.project video {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+}
+.project:hover video {
+    transform: scale(1.05);
+}
+
+.project-info {
+    background: #131721;
+    padding: 16px 20px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.project-info h3 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+.project-date {
+    font-size: 13px;
+    color: #ababab;
+    margin-top: 4px;
+}
+
+.layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.project-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.tag {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/*----------contact----------*/
+#contact {
+    padding: 100px 0;
+    text-align: center;
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.contact-btn {
+    padding: 16px 36px;
+    border: 1px solid #333;
+    border-radius: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: border-color 0.3s, background 0.3s;
+}
+.contact-btn:hover {
+    border-color: #87ceeb;
+    background: rgba(135, 206, 235, 0.08);
+}
+/*----------page projet----------*/
+#header.header-small {
+    height: auto;
+    padding: 20px 0;
+}
+.project-page {
+    padding: 60px 0 100px;
+    color: #ababab;
+}
+.back-link {
+    color: #87ceeb;
+    text-decoration: none;
+    font-size: 14px;
+}
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.project-banner {
+    border: 1px solid #2a2a2a;
+    border-radius: 14px;
+    overflow: hidden;
+    margin: 30px 0;
+}
+.project-banner video {
+    width: 100%;
+    display: block;
+}
+.project-banner-title {
+    background: #111;
+    padding: 16px 24px;
+    text-align: center;
+}
+.project-banner-title h1 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.project-card {
+    border: 1px solid #2a2a2a;
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+}
+.project-card h2 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.project-card p {
+    line-height: 1.6;
+}
+
+.project-duo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 700px) {
+    .project-duo {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-text {
+    margin: 40px 0;
+    max-width: 750px;
+}
+
+.project-text h2 {
+    font-size: 20px;
+    color: #87ceeb;
+    margin-bottom: 10px;
+}
+.project-text p {
+    line-height: 1.7;
+    white-space: pre-line;
+}
+
+.project-footer {
+    padding: 30px 0;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    border-top: 1px solid #222;
+}
+
+/*----------navigation fixe----------*/
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    z-index: 1000;
+    background: rgba(8, 8, 8, 0.7);
+    backdrop-filter: blur(8px);
+    transition: background 0.3s;
+}
+nav.scrolled {
+    background: rgba(8, 8, 8, 0.95);
+}
