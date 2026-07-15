@@ -10,7 +10,7 @@
         <div id="header" class="header-small">
             <div class="container">
                 <nav>
-                    <p class="logo">Prénom Nom</p>
+                    <p class="logo">Héry Rafalimanana-Lysson</p>
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="index.html#about">À propos</a></li>
@@ -27,46 +27,54 @@
 
                 <!-- Bannière média + titre -->
                 <div class="project-banner">
-                    <video autoplay muted loop playsinline controls>
-                        <source src="videos/corridor-tadc.webm" type="video/webm" />
+                    <video autoplay muted loop playsinline>
+                        <source src="videos/cells-war.webm" type="video/webm" />
                     </video>
                     <div class="project-banner-title">
-                        <h1>Corridor</h1>
+                        <h1>Cells War</h1>
                     </div>
                 </div>
 
                 <!-- Info -->
                 <div class="project-card project-info">
                     <h2>Info</h2>
-                    <p>1 personne &nbsp;|&nbsp; temps : 3 mois &nbsp;|&nbsp; outils : Unity, C#</p>
+                    <p>3 personne &nbsp;|&nbsp; temps : 3 mois &nbsp;|&nbsp; outils : Unity, C#, Blender</p>
                 </div>
 
                 <!-- Contexte / Objectif -->
                 <div class="project-duo">
                     <div class="project-card">
                         <h2>Contexte</h2>
-                        <p>Texte de contexte du projet.</p>
+                        <p>Projet de type "toy" réalisé en équipe, dans le cadre des études.</p>
                     </div>
                     <div class="project-card">
                         <h2>Objectif</h2>
-                        <p>Texte de l'objectif du projet.</p>
+                        <p>Concevoir un toy en groupe, pensé comme un système de jeu expérimental plutôt qu'un jeu complet.</p>
                     </div>
                 </div>
 
-                <!-- Sections texte libre -->
                 <div class="project-text">
                     <h2>Intro</h2>
-                    <p>Texte d'introduction.</p>
+                    <p>Après plusieurs tentatives en équipe, nous avons trouvé un prototype à la fois réalisable dans le temps imparti et suffisamment solide pour être développé jusqu'au bout.</p>
                 </div>
+
                 <div class="project-text">
                     <h2>Processus</h2>
-                    <p>Texte décrivant le processus.</p>
+                    <p>Nous avons réalisé un jeu de capture de points basé sur des cellules neutres, qui peuvent devenir saines ou infectées. Le joueur convertit les cellules pour les assainir, en les faisant apparaître depuis un vaisseau mère qui sert de spawner. En face, les messagères convertissent les cellules pour les infecter, depuis un vaisseau mère virulent qui joue le même rôle.</p> <br>
+                    <p>Chaque état de cellule déclenche une réaction défensive différente : les cellules infectées font apparaître des cellules chasseuses qui attaquent le joueur, tandis que les cellules saines font apparaître des cellules gardiennes qui attaquent les messagères.</p> <br>
+                    <p>Au sein de l'équipe, ma contribution a porté principalement sur le style graphique et sur la base de programmation du personnage. Je n'étais pas seul sur la partie code, mais je me suis concentré sur les ennemis et leur comportement, via un système de state machines. J'ai également utilisé le Shader Graph d'Unity pour réaliser plusieurs effets visuels, sans être le seul sur cette partie du travail c'est le pan sur lequel je me suis principalement investi.</p>
+                    <div class="project-image-row">
+                        <img src="images/Cell_image1.jpg" alt="Section basse du niveau, vue 1" class="project-image" />
+                        <img src="images/Cell_image2.jpg" alt="Section basse du niveau, vue 2" class="project-image" />
+                        <img src="images/Cell_image3.jpg" alt="Section basse du niveau, vue 3" class="project-image" />
+                        <img src="images/Cell_image4.jpg" alt="Section basse du niveau, vue 4" class="project-image" />
+                    </div>
                 </div>
+
                 <div class="project-text">
                     <h2>Apprentissage</h2>
-                    <p>Texte sur les apprentissages tirés du projet.</p>
+                    <p>Ce projet m'a permis de prendre en main le Shader Graph d'Unity, et surtout d'apprendre à combiner programmation et direction artistique dans un même travail plutôt que de les traiter comme deux tâches séparées. Travailler à plusieurs sur les mêmes systèmes (ennemis, style visuel) m'a aussi appris à délimiter clairement ma zone de contribution au sein d'un développement collectif, pour avancer efficacement sans se marcher dessus.</p>
                 </div>
-            </div>
         </main>
     </body>
 </html>
