@@ -248,18 +248,28 @@ nav ul li a:hover::after {
 .contact-links {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 24px;
     margin-top: 50px;
     flex-wrap: wrap;
 }
 .contact-btn {
-    padding: 16px 36px;
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #333;
     border-radius: 14px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
     transition: border-color 0.3s, background 0.3s;
+}
+.contact-btn img {
+    width: 28px;
+    height: 28px;
+    max-width: 100%;
+    display: block;
+    filter: invert(1);
 }
 .contact-btn:hover {
     border-color: #87ceeb;
@@ -333,7 +343,7 @@ nav ul li a:hover::after {
 
 .project-text {
     margin: 40px 0;
-    max-width: 750px;
+    max-width: 1200px;
 }
 
 .project-text h2 {
@@ -372,4 +382,38 @@ nav {
 }
 nav.scrolled {
     background: rgba(8, 8, 8, 0.95);
+}
+
+css.project-image {
+    width: 50%;
+    border-radius: 10px;
+    display: block;
+    margin: 20px 0;
+}
+
+/* taille réduite pour les images intercalées dans le texte */
+.project-image-medium {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* les deux dernières images côte à côte */
+.project-image-row {
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 20px 0;
+}
+.project-image-row .project-image {
+    margin: 0;
+    width: 500px;
+    object-fit: cover;
+}
+
+@media (max-width: 700px) {
+    .project-image-row {
+        grid-template-columns: 1fr;
+    }
 }
